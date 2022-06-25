@@ -1,0 +1,51 @@
+﻿<Window x:Class="FishMonitoring.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FishMonitoring"
+        mc:Ignorable="d"
+        Title="Fish monitoring" Height="450" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="180*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="14*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.ColumnSpan="3" Grid.RowSpan="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="180*"/>
+                <RowDefinition Height="20*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="25*"/>
+                <ColumnDefinition Width="444*"/>
+                <ColumnDefinition Width="31*"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBox x:Name="fishType" Grid.Column="1" HorizontalAlignment="Left" Margin="78,31,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+            <TextBox x:Name="minTemp" Grid.Column="1" HorizontalAlignment="Left" Margin="78,125,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+            <TextBox x:Name="maxTemp" Grid.Column="1" HorizontalAlignment="Left" Margin="78,90,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+            <TextBox x:Name="maxTempTime" Grid.Column="1" HorizontalAlignment="Left" Margin="230,90,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+            <TextBox x:Name="minTempTime" Grid.Column="1" HorizontalAlignment="Left" Margin="230,125,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+            <TextBox x:Name="date" Grid.Column="1" HorizontalAlignment="Left" Margin="78,154,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+            <TextBox x:Name="tempratures" Grid.Column="1" HorizontalAlignment="Left" Margin="78,178,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" Height="18"/>
+            <Label Content="Вид рыбы" HorizontalAlignment="Left" Margin="2,28,0,0" Grid.Row="1" VerticalAlignment="Top" Height="24" Width="67" RenderTransformOrigin="0.478,0.253" FontSize="11" Grid.Column="1"/>
+            <Label Content="Температура" HorizontalAlignment="Left" Margin="78,61,0,0" Grid.Row="1" VerticalAlignment="Top" Height="29" Width="83" RenderTransformOrigin="0.478,0.253" FontSize="11" Grid.Column="1"/>
+            <Label Content="Время" HorizontalAlignment="Left" Margin="230,61,0,0" Grid.Row="1" VerticalAlignment="Top" Height="29" Width="83" RenderTransformOrigin="0.478,0.253" FontSize="11" Grid.Column="1"/>
+            <Label Content="Max" HorizontalAlignment="Left" Margin="2,87,0,0" Grid.Row="1" VerticalAlignment="Top" Height="24" Width="67" RenderTransformOrigin="0.478,0.253" FontSize="11" Grid.Column="1"/>
+            <Label Content="Min
+                   " HorizontalAlignment="Left" Margin="2,122,0,0" Grid.Row="1" VerticalAlignment="Top" Height="24" Width="67" RenderTransformOrigin="0.478,0.253" FontSize="11" Grid.Column="1"/>
+            <Label Content="Дата" HorizontalAlignment="Left" Margin="2,151,0,0" Grid.Row="1" VerticalAlignment="Top" Height="24" Width="67" RenderTransformOrigin="0.478,0.253" FontSize="11" Grid.Column="1"/>
+            <Label Content="Температура" HorizontalAlignment="Left" Margin="2,175,0,0" Grid.Row="1" VerticalAlignment="Top" Height="24" Width="71" RenderTransformOrigin="0.478,0.253" FontSize="10" Grid.Column="1"/>
+
+        </Grid>
+
+    </Grid>
+</Window>
